@@ -1,0 +1,138 @@
+# ============================================================
+# Hexo 配置文件 (Hexo Configuration)
+# 官方文档: https://hexo.io/docs/configuration.html
+# 源码仓库: https://github.com/hexojs/hexo/
+# ============================================================
+
+# ============================================================
+# 网站基本信息 (Site)
+# ============================================================
+title: 毅学就会              # 网站标题，会显示在浏览器标签页和页面头部
+subtitle: 卡丁车DIY          # 网站副标题，留空表示不显示副标题
+description: 分享卡丁车DIY过程中的经验、技巧和问题解决方法             # 网站描述，用于 SEO 搜索引擎优化，会出现在 meta 标签中
+keywords:                   # 网站关键词，用于 SEO，多个关键词可以用逗号分隔
+author: 毅学就会            # 网站作者名称，会显示在页面底部或文章元信息中
+language: zh-CN                # 网站语言，如 zh-CN(简体中文)、zh-TW(繁体中文)、en(英文)、ja(日语) 等
+timezone: ''                # 时区设置，留空使用默认时区，也可填如 'Asia/Shanghai'
+
+# ============================================================
+# 网址设置 (URL)
+# 设置你的网站网址。例如使用 GitHub Pages 时，设置为 'https://用户名.github.io/项目名'
+# ============================================================
+url: http://example.com     # 网站的完整 URL，部署时必须修改为实际域名
+permalink: :year/:month/:day/:title/   # 文章永久链接格式，:year=年 :month=月 :day=日 :title=文章标题
+permalink_defaults:         # 永久链接中各变量的默认值，当变量为空时使用此默认值
+pretty_urls:                # URL 美化设置
+  trailing_index: true      # 是否在 URL 末尾保留 'index.html'，设为 false 可移除
+  trailing_html: true       # 是否在 URL 末尾保留 '.html'，设为 false 可移除
+
+# ============================================================
+# 目录设置 (Directory)
+# ============================================================
+source_dir: source          # 源文件目录，存放所有原始 Markdown 文章和页面
+public_dir: public          # 生成目录，执行 hexo generate 后输出的静态网站文件存放于此
+tag_dir: tags               # 标签页面目录名
+archive_dir: archives       # 归档页面目录名
+category_dir: categories    # 分类页面目录名
+code_dir: downloads/code    # 代码下载目录，用于文章中引用的代码文件
+i18n_dir: :lang             # 国际化(i18n)目录名
+skip_render:                # 跳过渲染的文件或文件夹列表，匹配的文件/夹会原样复制到 public 目录而不经过渲染
+
+# ============================================================
+# 写作设置 (Writing)
+# ============================================================
+new_post_name: :title.md    # 新建文章的文件名格式，:title 会被替换为文章标题
+default_layout: post        # 默认文章布局模板，可选 post(文章)、page(页面)、draft(草稿)
+titlecase: false            # 是否将标题转换为首字母大写格式（英文标题专用）
+external_link:              # 外部链接设置
+  enable: true              # 是否在新标签页中打开外部链接
+  field: site               # 应用范围，site=全站应用，post=仅文章内应用
+  exclude: ''               # 排除的域名，匹配的链接不会被当作外部链接处理
+filename_case: 0            # 文件名大小写转换：0=不变，1=小写，2=大写
+render_drafts: false        # 是否渲染草稿文章（草稿默认不显示在网站上）
+post_asset_folder: false    # 是否为每篇文章创建独立的资源文件夹，用于存放文章引用的图片等资源
+relative_link: false        # 是否使用相对链接（适用于本地文件浏览，不适用于部署到服务器）
+future: true                # 是否显示未来日期的文章（日期大于当前日期的文章）
+syntax_highlighter: highlight.js  # 代码语法高亮工具，可选 highlight.js 或 prismjs
+highlight:                  # highlight.js 代码高亮配置
+  line_number: true         # 是否显示行号
+  auto_detect: false        # 是否自动检测代码语言
+  tab_replace: ''           # 用指定字符串替换代码中的 Tab 缩进，留空表示不替换
+  wrap: true                # 是否将代码块包裹在 <table> 中（便于添加行号）
+  hljs: false               # 是否使用 highlight.js 库，设为 false 则使用 Hexo 内置高亮
+prismjs:                    # prismjs 代码高亮配置（仅当 syntax_highlighter 设为 prismjs 时生效）
+  preprocess: true          # 是否对代码进行预处理
+  line_number: true         # 是否显示行号
+  tab_replace: ''           # 用指定字符串替换代码中的 Tab 缩进
+
+# ============================================================
+# 首页设置 (Home page setting)
+# path: 博客首页的根路径（默认为 ''）
+# per_page: 每页显示的文章数量（设为 0 则禁用分页，显示全部文章）
+# order_by: 文章排序方式（默认按日期降序排列，-date 表示最新的在前）
+# ============================================================
+index_generator:            # 首页生成器配置
+  path: ''                  # 首页路径，留空表示根路径
+  per_page: 10              # 首页每页显示 10 篇文章
+  order_by: -date           # 按日期降序排列（最新文章在前）
+
+# ============================================================
+# 分类与标签 (Category & Tag)
+# ============================================================
+default_category: uncategorized  # 默认分类名称，当文章未指定分类时自动归入此类
+category_map:               # 分类名称映射表，可将分类名映射为其他名称
+tag_map:                    # 标签名称映射表，可将标签名映射为其他名称
+
+# ============================================================
+# 元数据元素 (Metadata elements)
+# 参考: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+# ============================================================
+meta_generator: true        # 是否在 HTML 头部插入 <meta name="generator" content="Hexo 版本号"> 标签
+
+# ============================================================
+# 日期/时间格式 (Date / Time format)
+# Hexo 使用 Moment.js 库来解析和显示日期
+# 自定义格式参考: http://momentjs.com/docs/#/displaying/format/
+# ============================================================
+date_format: YYYY-MM-DD     # 日期显示格式，如 2026-06-25
+time_format: HH:mm:ss       # 时间显示格式，如 14:30:00
+## updated_option 支持的值: 'mtime'(使用文件修改时间) | 'date'(使用 Front-matter 中的 date) | 'empty'(不显示更新时间)
+updated_option: 'mtime'     # 文章"更新时间"的取值方式，mtime=文件修改时间
+
+# ============================================================
+# 分页设置 (Pagination)
+# 设置 per_page 为 0 可禁用分页
+# ============================================================
+per_page: 10                # 每页显示的文章数量（归档、分类、标签页的默认值）
+pagination_dir: page        # 分页目录名，URL 格式如 /page/2/
+
+# ============================================================
+# 包含/排除文件 (Include / Exclude file(s))
+# include:/exclude: 选项仅对 'source/' 目录生效
+# ============================================================
+include:                    # 需要包含的文件/文件夹（即使被忽略也会被处理）
+exclude:                    # 需要排除的文件/文件夹（不会被处理）
+ignore:                     # 需要忽略的文件/文件夹（不会被处理）
+
+# ============================================================
+# 扩展设置 (Extensions)
+# 插件: https://hexo.io/plugins/
+# 主题: https://hexo.io/themes/
+# ============================================================
+# theme: landscape            # 当前使用的主题名称，默认为 landscape，可替换为其他主题
+theme: anzhiyu            # 当前使用的主题名称，默认为 landscape，可替换为其他主题
+
+# ============================================================
+# 部署设置 (Deployment)
+# 文档: https://hexo.io/docs/one-command-deployment
+# ============================================================
+deploy:                     # 部署配置，执行 hexo deploy 时使用
+  type: ''                  # 部署类型，如 git、heroku、rsync 等，留空表示暂不部署
+
+
+
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false

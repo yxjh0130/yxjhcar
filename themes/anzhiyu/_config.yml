@@ -1,0 +1,1511 @@
+# ==========================================
+# 导航菜单配置 (Navigation Menu)
+# ==========================================
+menu:
+  # 文章分类菜单
+  # 文章:
+  #   隧道: /archives/ || anzhiyu-icon-box-archive
+  #   分类: /categories/ || anzhiyu-icon-shapes
+  #   标签: /tags/ || anzhiyu-icon-tags
+
+  # 友链菜单
+  友链:
+    友人帐: /link/ || anzhiyu-icon-link
+  #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
+  #   留言板: /comments/ || anzhiyu-icon-envelope
+
+  # 个人页面菜单
+  我的:
+    音乐馆: /music/?id=1708664797&server=tencent
+  #   追番页: /bangumis/ || anzhiyu-icon-bilibili
+  #   相册集: /album/ || anzhiyu-icon-images
+  #   小空调: /air-conditioner/ || anzhiyu-icon-fan
+
+  # 关于菜单
+  关于:
+  #   关于本人: /about/ || anzhiyu-icon-paper-plane
+    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+  #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
+# ==========================================
+# 顶部导航栏配置 (nav)
+# ==========================================
+# nav相关配置
+nav:
+  enable: true # 是否启用导航栏
+  travelling: true # 是否开启旅行者/开往模式
+  clock: true # 是否显示时钟
+  # 导航栏项目列表
+  menu:
+    - title: 网页 # 导航栏分组标题
+      item:
+        - name: 博客 # 项目名称
+          link: https://hexo.anheyu.com/ # 跳转链接
+          icon: /img/favicon.ico # 项目图标
+    - title: 项目 # 导航栏分组标题
+      item:
+        - name: 安知鱼图床 # 项目名称
+          link: https://image.anheyu.com/ # 跳转链接
+          icon: https://image.anheyu.com/favicon.ico # 项目图标
+
+# ==========================================
+# 哀悼日配置 (Mourn)
+# ==========================================
+# mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
+# 注意： 仅网站首页变灰，其他页面正常显示
+mourn:
+  enable: false # 是否启用哀悼模式
+  days: [4-5, 5-12, 7-7, 9-18, 12-13] # 哀悼日期列表（月-日格式）
+
+# ==========================================
+# 代码块配置 (Code Blocks)
+# ==========================================
+# Code Blocks (代码相关)
+# --------------------------------------
+
+highlight_theme: light # 代码高亮主题: darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true # 是否显示复制按钮 (copy button)
+highlight_lang: true # 是否显示代码语言 (show the code language)
+highlight_shrink: false # 是否收缩代码块: true=收缩 / false=展开 / none=展开且隐藏按钮
+highlight_height_limit: 330 # 代码块最大高度限制 (单位: px)
+code_word_wrap: false # 代码是否自动换行
+
+# ==========================================
+# 复制内容配置 (Copy Settings)
+# ==========================================
+# copy settings
+# copyright: 复制的内容后面加上版权信息
+# copy: enable 复制后弹窗提示版权信息
+copy:
+  enable: true # 是否启用复制功能
+  copyright:
+    enable: false # 是否启用复制后加版权信息
+    limit_count: 50 # 小于该字数时不添加版权信息
+
+# ==========================================
+# 社交图标配置 (Social Settings)
+# ==========================================
+# social settings (社交图标设置)
+# 格式: name: link || icon
+social:
+  # Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
+  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
+
+# ==========================================
+# 作者卡片状态配置 (Author Status)
+# ==========================================
+# 作者卡片 状态
+author_status:
+  enable: false # 是否启用作者状态卡片
+  # 状态图片，可以是任何图片，建议放表情包或者emoji图片，效果都很好
+  # 表情包速查: https://emotion.xiaokang.me/
+  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
+  # 技能标签列表
+  skills:
+    # - 🤖️ 数码科技爱好者
+    # - 🔍 分享与热心帮助
+    # - 🏠 智能家居小能手
+    # - 🔨 设计开发一条龙
+    # - 🤝 专修交互与设计
+    # - 🏃 脚踏实地行动派
+    # - 🧱 团队小组发动机
+    # - 💢 壮汉人狠话不多
+
+# ==========================================
+# 搜索配置 (Search)
+# ==========================================
+# search (搜索)
+# --------------------------------------
+
+# Algolia 搜索 (Algolia search)
+algolia_search:
+  enable: false # 是否启用 Algolia 搜索
+  hits:
+    per_page: 6 # 每页搜索结果数量
+  # 搜索标签过滤
+  tags:
+    # - 前端
+    # - Hexo
+
+# Docsearch (Algolia Docsearch 文档搜索)
+# 申请和配置文档: https://docsearch.algolia.com/
+# 爬虫管理控制台: https://crawler.algolia.com/
+# 设置: https://www.algolia.com/
+docsearch:
+  enable: false # 是否启用 Docsearch
+  appId: # 应用ID (邮件中查看)
+  apiKey: # API密钥 (邮件中查看)
+  indexName: # 索引名称 (邮件中查看)
+  option: # 其他可选配置
+
+# 本地搜索 (Local search)
+local_search:
+  enable: false # 是否启用本地搜索
+  preload: true # 是否预加载搜索数据
+  CDN: # 搜索CDN地址
+
+# ==========================================
+# 数学公式配置 (Math)
+# ==========================================
+# Math (数学)
+# --------------------------------------
+# per_page 说明:
+# true:  每一页都加载数学公式js脚本
+# false: 需要时加载，须在Markdown Front-matter 加上 mathjax: true
+
+# MathJax 数学公式渲染
+mathjax:
+  enable: false # 是否启用 MathJax
+  per_page: false # 是否每页加载
+
+# KaTeX 数学公式渲染
+katex:
+  enable: false # 是否启用 KaTeX
+  per_page: false # 是否每页加载
+  hide_scrollbar: true # 是否隐藏数学公式的滚动条
+
+# ==========================================
+# 图片设置 (Image)
+# ==========================================
+# Image (图片设置)
+# --------------------------------------
+
+# Favicon（网站图标）
+favicon: /favicon.ico # 网站favicon图标路径
+
+# Avatar (头像)
+avatar:
+  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg # 头像图片链接
+  effect: false # 是否开启头像特效
+
+# 禁用所有横幅图片
+disable_top_img: false # 设为true则禁用所有页面的顶部横幅图片
+
+# 首页横幅图片
+index_img: false # 首页顶部大图，false则不显示，或填写背景图片URL
+
+# 页面默认顶部图片
+default_top_img: false # 当页面没有设置top_img时，默认显示的顶部图片
+
+# 文章封面配置
+cover:
+  # 是否显示文章封面
+  index_enable: true # 首页是否显示封面
+  aside_enable: true # 侧边栏是否显示封面
+  archives_enable: true # 归档页是否显示封面
+  # 封面在首页显示的位置
+  # left/right/both (左/右/两边)
+  position: left
+  # 当没有设置cover时，默认显示以下封面
+  default_cover:
+    # - /img/default_cover.jpg
+
+# 替换无法显示的图片
+error_img:
+  flink: /img/friend_404.gif # 友链页面图片加载失败时的替换图片
+  post_page: /img/404.jpg # 文章页面图片加载失败时的替换图片
+
+# 404页面配置
+error_404:
+  enable: true # 是否启用404页面
+  subtitle: "请尝试站内搜索寻找文章" # 404页面提示文字
+  background: https://bu.dusays.com/2023/05/08/645907596997d.gif # 404页面背景图片
+
+# ==========================================
+# 文章元信息配置 (Post Meta)
+# ==========================================
+post_meta:
+  page: # 首页文章列表的元信息
+    date_type: created # 日期类型: created=创建日 / updated=更新日 / both=两者都显示
+    date_format: simple # 日期格式: date=日期 / relative=相对日期 / simple=简单日期
+    categories: true # 是否显示分类
+    tags: true # 是否显示标签
+    label: false # 是否显示描述性文字
+  post: # 文章详情页的元信息
+    date_type: both # 日期类型: created=创建日 / updated=更新日 / both=两者都显示
+    date_format: date # 日期格式: date=日期 / relative=相对日期
+    categories: true # 是否显示分类
+    tags: true # 是否显示标签
+    label: true # 是否显示描述性文字
+    unread: false # 是否开启文章未读功能
+
+# ==========================================
+# 主色调配置 (Main Tone)
+# ==========================================
+# 主色调相关配置
+mainTone:
+  enable: false # 是否启用获取图片主色调功能
+  # 主色调获取模式:
+  # colorthief: 前端获取图片主色调
+  # cdn: 图片url+imageAve参数获取主色调
+  # api: 请求API获取主色调
+  # both: 先请求cdn参数，无法获取则请求API
+  # 也可在文章内配置 main_color: '#3e5658' 直接使用十六进制颜色
+  mode: api
+  # 项目地址: https://github.com/anzhiyu-c/img2color-go
+  api: https://img2color-go.vercel.app/api?img= # mode为api时填写API地址
+  cover_change: true # 整篇文章是否跟随封面图修改主色调
+
+# ==========================================
+# 字数统计配置 (Wordcount)
+# ==========================================
+# wordcount (字数统计)
+wordcount:
+  enable: false # 是否启用字数统计
+  post_wordcount: true # 是否显示文章字数
+  min2read: true # 是否显示阅读时间
+  total_wordcount: true # 是否显示站点总字数
+
+# ==========================================
+# 首页文章摘要配置 (Index Post Content)
+# ==========================================
+# 首页显示文章摘要的方式
+# 1: 显示 Front-matter 中的 description
+# 2: both (有description则显示，否则显示自动摘要)
+# 3: auto_excerpt 自动摘要 (默认)
+# false: 不显示文章摘要
+index_post_content:
+  method: 3 # 摘要显示方式
+  length: 500 # 摘要字数限制 (method为2或3时生效)
+
+# ==========================================
+# 页面锚点配置 (Anchor)
+# ==========================================
+# 页面滚动时URL是否跟随标题ID更新
+anchor: false
+
+# ==========================================
+# 文章配置 (Post)
+# ==========================================
+# Post
+# --------------------------------------
+
+# 文章目录 (toc)
+toc:
+  post: true # 文章页是否显示目录
+  page: false # 独立页面是否显示目录
+  number: true # 目录是否显示编号
+  expand: false # 目录是否默认展开
+  style_simple: false # 是否使用简洁样式 (仅文章页生效)
+
+# 文章版权信息
+post_copyright:
+  enable: true # 是否启用版权声明
+  decode: false # 是否对版权信息进行URL解码
+  author_href: # 作者链接
+  location: 长沙 # 作者所在地
+  license: CC BY-NC-SA 4.0 # 版权协议名称
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/ # 版权协议链接
+  avatarSinks: false # hover时头像是否下沉
+  copyright_author_img_back: # 版权区域背景图片
+  copyright_author_img_front: # 版权区域前景图片
+  copyright_author_link: / # 版权作者链接
+
+# ==========================================
+# 打赏/赞助配置 (Reward)
+# ==========================================
+# Sponsor/reward (赞助/打赏)
+reward:
+  enable: true # 是否启用打赏功能
+  QR_code:
+    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png # 打赏二维码图片
+      link: # 二维码跳转链接
+      text: 微信 # 打赏方式文字
+    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png # 打赏二维码图片
+      link: # 二维码跳转链接
+      text: 支付宝 # 打赏方式文字
+
+# ==========================================
+# 文章在线编辑配置 (Post Edit)
+# ==========================================
+# Post edit (在线编辑文章源码)
+# 目前仅可选择一个平台在线编辑
+post_edit:
+  enable: false # 是否启用在线编辑
+  # GitHub 在线编辑
+  github: false # 是否启用GitHub在线编辑
+  # 语雀在线编辑
+  yuque: false # 是否启用语雀在线编辑
+
+# ==========================================
+# 相关文章配置 (Related Posts)
+# ==========================================
+# Related Articles (相关文章推荐)
+related_post:
+  enable: true # 是否启用相关文章推荐
+  limit: 6 # 显示相关文章的数量
+  date_type: created # 日期显示类型: created=创建日 / updated=更新日
+
+# figcaption (图片描述文字)
+photofigcaption: false # 是否显示图片的描述文字
+
+# ==========================================
+# 文章分页配置 (Post Pagination)
+# ==========================================
+# post_pagination (文章上下篇导航)
+# 可选值: 1 / 2 / 3 / 4 / false
+# 1: 下一篇链向旧文章
+# 2: 下一篇链向新文章
+# 3: 只有下一篇，在文章滚动到评论区时显示(旧文章)
+# 4: 只有下一篇，在文章滚动到评论区时显示(旧文章)，显示图片cover
+# false: 禁用分页
+post_pagination: 2
+
+# ==========================================
+# 文章过期提醒配置 (Notice Outdate)
+# ==========================================
+# 文章过期提醒
+noticeOutdate:
+  enable: false # 是否启用过期提醒
+  style: flat # 提示样式: simple=简单 / flat=扁平
+  limit_day: 365 # 多少天后显示过期提醒
+  position: top # 提示位置: top=顶部 / bottom=底部
+  message_prev: It has been # 提示文字前缀
+  message_next: days since the last update, the content of the article may be outdated. # 提示文字后缀
+
+# ==========================================
+# 分享系统配置 (Share System)
+# ==========================================
+# Share System (分享功能)
+# --------------------------------------
+
+# Share.js 分享
+# https://github.com/overtrue/share.js
+sharejs:
+  enable: true # 是否启用 Share.js 分享
+  sites: facebook,twitter,wechat,weibo,qq # 启用的分享平台
+
+# AddToAny 分享
+# https://www.addtoany.com/
+addtoany:
+  enable: false # 是否启用 AddToAny 分享
+  item: facebook,twitter,wechat,sina_weibo,email,copy_link # 启用的分享平台
+
+# Comments System
+# --------------------------------------
+
+# ==========================================
+# 评论系统配置 (Comments System)
+# ==========================================
+# Comments System
+# --------------------------------------
+
+# 通用评论配置
+comments:
+  # 最多支持两个评论系统，第一个将作为默认显示
+  # 可选: Valine/Waline/Twikoo/Artalk
+  use: # 使用的评论系统，如 Twikoo/Waline
+  text: true # 是否在按钮旁显示评论名称
+  # lazyload: 评论系统在进入视口时才加载
+  # 如果设为true，评论计数将无效
+  lazyload: false # 是否启用懒加载
+  count: false # 是否在文章顶部图片显示评论计数
+  card_post_count: false # 是否在首页显示评论计数
+
+# ==========================================
+# Valine 评论系统
+# ==========================================
+# valine (无后端评论系统)
+# https://valine.js.org
+valine:
+  appId: xxxxx # LeanCloud 应用 App ID
+  appKey: xxxxx # LeanCloud 应用 App Key
+  pageSize: 10 # 评论列表每页数量
+  avatar: mp # 头像来源: https://valine.js.org/#/avatar
+  lang: zh-CN # 语言: zh-CN/zh-TW/en/ja
+  placeholder: 填写QQ邮箱就会使用QQ头像喔~. # 评论框占位文字
+  guest_info: nick,mail,link # 评论者信息字段 (nick/mail/link)
+  recordIP: false # 是否记录评论者IP
+  serverURLs: # 国内自定义域名用户可配置，海外版自动检测无需填写
+  bg: /img/comment_bg.png # 评论框背景图片
+  emojiCDN: //i0.hdslb.com/bfs/emote/ # 表情包CDN地址
+  enableQQ: true # 是否启用QQ昵称和头像自动获取
+  requiredFields: nick,mail # 必填字段 (nick/mail)
+  visitor: false # 是否开启文章阅读量统计
+  master: # 博主标识
+    - xxxxx
+  friends: # 朋友标识
+    - xxxxxx
+  tagMeta: "博主,小伙伴,访客" # 标签元数据
+  option: # 其他可选配置
+
+# ==========================================
+# Waline 评论系统
+# ==========================================
+# waline - 基于Valine的后端评论系统
+# https://waline.js.org/
+waline:
+  serverURL: # Waline 服务端地址
+  bg: # Waline 背景图片
+  pageview: false # 是否启用页面访问量统计
+  meta_css: false # 是否引入 waline-meta.css 以显示meta图标
+  imageUploader: true # 是否启用图片上传功能
+  # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
+  option: # 其他可选配置
+
+# ==========================================
+# Twikoo 评论系统
+# ==========================================
+# Twikoo (腾讯云开发的评论系统)
+# https://github.com/imaegoo/twikoo
+twikoo:
+  envId: # 腾讯云环境ID
+  region: # 腾讯云区域，如 ap-shanghai
+  visitor: false # 是否开启文章阅读量统计
+  option: # 其他可选配置
+
+# ==========================================
+# Artalk 评论系统
+# ==========================================
+# Artalk (自托管评论系统)
+# https://artalk.js.org/guide/frontend/config.html
+artalk:
+  server: # Artalk 服务端地址
+  site: # 站点名称
+  visitor: false # 是否开启文章阅读量统计
+  option: # 其他可选配置
+
+# ==========================================
+# Giscus 评论系统
+# ==========================================
+# giscus (基于GitHub Discussions的评论系统)
+# https://giscus.app/
+giscus:
+  repo: # GitHub 仓库名称
+  repo_id: # GitHub 仓库 ID
+  category_id: # GitHub 仓库分类 ID
+  theme:
+    light: light # 浅色模式主题
+    dark: dark # 深色模式主题
+  option: # 其他可选配置
+    data-lang: zh-CN # 语言
+    data-mapping: # 页面映射方式
+    data-category: # 分类
+    data-input-position: # 评论输入框位置
+
+# ==========================================
+# 在线客服配置 (Chat Services)
+# ==========================================
+# Chat Services
+# --------------------------------------
+
+# 聊天按钮（推荐使用）
+# 会在网站右下角创建一个按钮，隐藏原始聊天按钮
+chat_btn: false # 是否启用聊天按钮
+
+# 原始聊天按钮：向上滚动时显示，向下滚动时隐藏
+chat_hide_show: false # 是否启用滚动时显示/隐藏聊天按钮
+
+# chatra 在线客服
+# https://chatra.io/
+chatra:
+  enable: false # 是否启用 Chatra
+  id: # Chatra ID
+
+# tidio 在线客服
+# https://www.tidio.com/
+tidio:
+  enable: false # 是否启用 Tidio
+  public_key: # Tidio 公钥
+
+# daovoice 在线客服
+# http://daovoice.io/
+daovoice:
+  enable: false # 是否启用 Daovoice
+  app_id: # Daovoice App ID
+
+# crisp 在线客服
+# https://crisp.chat/en/
+crisp:
+  enable: false # 是否启用 Crisp
+  website_id: # Crisp 网站ID
+
+# ==========================================
+# 页脚配置 (Footer Settings)
+# ==========================================
+# Footer Settings
+# --------------------------------------
+footer:
+  # 版权所有者信息
+  owner:
+    enable: true # 是否显示版权信息
+    since: 2020 # 网站开始年份
+  custom_text: # 自定义文字
+  # 运行时间显示
+  runtime:
+    enable: false # 是否显示运行时间
+    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg # 上班时间徽章图片
+    work_description: 距离月入25k也就还差一个大佬带我~ # 上班时间描述
+    offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg # 下班时间徽章图片
+    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~ # 下班时间描述
+  # 底部徽标配置
+  # https://shields.io/
+  # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
+  bdageitem:
+    enable: false # 是否显示底部徽标
+    list: # 徽标列表
+      - link: https://hexo.io/ # 徽标指向网站链接
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg # 徽标API
+        message: 博客框架为Hexo_v5.4.0 # 徽标提示语
+      - link: https://hexo.anheyu.com/
+        shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
+        message: 本站使用AnZhiYu主题
+      # - link: https://www.dogecloud.com/
+      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
+      #   message: 本站使用多吉云为静态资源提供CDN加速
+      # - link: https://github.com/
+      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+      #   message: 本站项目由Github托管
+      # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
+      #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+  # 社交栏配置
+  socialBar:
+    enable: false # 是否启用社交栏
+    centerImg: # 中间图片
+    left: # 左侧社交链接
+      # - title: email
+      #   link: mailto:anzhiyu-c@qq.com
+      #   icon: anzhiyu-icon-envelope
+      # - title: 微博
+      #   link: https://weibo.com/u/6378063631
+      #   icon: anzhiyu-icon-weibo
+      # - title: facebook
+      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
+      #   icon: anzhiyu-icon-facebook1
+      # - title: RSS
+      #   link: atom.xml
+      #   icon: anzhiyu-icon-rss
+    right: # 右侧社交链接
+      # - title: Github
+      #   link: https://github.com/anzhiyu-c
+      #   icon: anzhiyu-icon-github
+      # - title: Bilibili
+      #   link: https://space.bilibili.com/372204786
+      #   icon: anzhiyu-icon-bilibili
+      # - title: 抖音
+      #   link: https://v.douyin.com/DwCpMEy/
+      #   icon: anzhiyu-icon-tiktok
+      # - title: CC
+      #   link: /copyright
+      #   icon: anzhiyu-icon-copyright-line
+  # 底部链接列表
+  list:
+    enable: false # 是否启用底部链接列表
+    randomFriends: 3 # 随机友链数量
+    project: # 项目分组
+      # - title: 服务
+      #   links:
+      #     - title: 51la统计
+      #       link: https://v6.51.la/
+      #     - title: 十年之约
+      #       link: https://www.foreverblog.cn/
+      #     - title: 开往
+      #       link: https://github.com/travellings-link/travellings
+      # - title: 主题
+      #   links:
+      #     - title: 文档
+      #       link: /docs/
+      #     - title: 源码
+      #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+      #     - title: 更新日志
+      #       link: /update/
+      # - title: 导航
+      #   links:
+      #     - title: 即刻短文
+      #       link: /essay/
+      #     - title: 友链文章
+      #       link: /fcircle/
+      #     - title: 留言板
+      #       link: /comments/
+      # - title: 协议
+      #   links:
+      #     - title: 隐私协议
+      #       link: /privacy/
+      #     - title: Cookies
+      #       link: /cookies/
+      #     - title: 版权协议
+      #       link: /copyright/
+  # 底部信息栏
+  footerBar:
+    enable: true # 是否启用底部信息栏
+    authorLink: / # 作者链接
+    cc: # 知识共享协议
+      enable: false # 是否显示CC协议
+      link: /copyright # CC协议链接
+    linkList: # 底部链接列表
+      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+        text: 主题
+      # - link: https://image.anheyu.com
+      #   text: 图床
+      # - link: https://beian.miit.gov.cn/
+      #   text: 湘ICP备-xxxxxxx号
+    # 底部副标题
+    subTitle:
+      enable: false # 是否启用副标题
+      # Typewriter Effect (打字效果)
+      effect: true # 是否启用打字效果
+      # Effect Speed Options (打字效果速度参数)
+      startDelay: 300 # 打字开始前的延迟 (毫秒)
+      typeSpeed: 150 # 打字速度 (毫秒)
+      backSpeed: 50 # 退格速度 (毫秒)
+      # loop (循环打字)
+      loop: true # 是否循环打字
+      # source 调用第三方服务
+      # source: false 关闭调用
+      # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
+      # source: 2  调用一句网（简体） http://yijuzhan.com/
+      # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
+      # subtitle 会先显示 source , 再显示 sub 的内容
+      source: 1 # 一言来源
+      # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
+      sub: # 自定义副标题文字列表
+        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+
+# ==========================================
+# 网站统计配置 (Analysis)
+# ==========================================
+# Analysis
+# --------------------------------------
+
+# 百度统计
+# https://tongji.baidu.com/web/welcome/login
+baidu_analytics: # 百度统计ID
+
+# Google Analytics
+# https://analytics.google.com/analytics/web/
+google_analytics: # Google Analytics ID
+
+# CNZZ/友盟统计
+# https://www.umeng.com/
+cnzz_analytics: # CNZZ统计ID
+
+# Cloudflare Analytics
+# https://www.cloudflare.com/zh-tw/web-analytics/
+cloudflare_analytics: # Cloudflare 统计ID
+
+# Microsoft Clarity
+# https://clarity.microsoft.com/
+microsoft_clarity: # Microsoft Clarity ID
+
+# ==========================================
+# 广告配置 (Advertisement)
+# ==========================================
+# Advertisement
+# --------------------------------------
+
+# Google Adsense (谷歌广告)
+google_adsense:
+  enable: false # 是否启用谷歌广告
+  auto_ads: true # 是否启用自动广告
+  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js # 广告JS脚本
+  client: # 广告客户ID
+  enable_page_level_ads: true # 是否启用页面级广告
+
+# 手动插入广告
+# ad:
+#   index: # 首页广告
+#   aside: # 侧边栏广告
+#   post: # 文章页广告
+
+# ==========================================
+# 站长验证配置 (Verification)
+# ==========================================
+# Verification (站长验证)
+# --------------------------------------
+
+# 站点验证（用于搜索引擎站长工具验证）
+site_verification:
+  - name: google-site-verification # Google 搜索控制台验证
+    content: xxx # 验证内容
+  - name: baidu-site-verification # 百度站长平台验证
+    content: code-xxx # 验证码
+  - name: msvalidate.01 # Bing 站长工具验证
+    content: xxx # 验证内容
+
+# ==========================================
+# 美化/效果配置 (Beautify/Effect)
+# ==========================================
+# Beautify/Effect (美化/效果)
+# --------------------------------------
+
+# 主题颜色自定义
+# 注意: 颜色值必须使用双引号包裹，如 "#000"，否则可能出错！
+theme_color:
+  enable: true # 是否启用自定义主题颜色
+  main: "#425AEF" # 主色调（浅色模式）
+  dark_main: "#f2b94b" # 主色调（深色模式）
+  paginator: "#425AEF" # 分页器颜色
+  #   button_hover: "#FF7242" # 按钮悬停颜色
+  text_selection: "#2128bd" # 文字选中颜色
+  link_color: "var(--anzhiyu-fontcolor)" # 链接颜色
+  meta_color: "var(--anzhiyu-fontcolor)" # 元信息颜色
+  hr_color: "#4259ef23" # 水平分割线颜色
+  code_foreground: "#fff" # 代码前景色
+  code_background: "var(--anzhiyu-code-stress)" # 代码背景色
+  toc_color: "#425AEF" # 目录颜色
+  #   blockquote_padding_color: "#425AEF" # 引用块边框颜色
+  #   blockquote_background_color: "#425AEF" # 引用块背景颜色
+  scrollbar_color: "var(--anzhiyu-scrollbar)" # 滚动条颜色
+  meta_theme_color_light: "#f7f9fe" # 浅色模式meta主题色
+  meta_theme_color_dark: "#18171d" # 深色模式meta主题色
+
+# 移动端侧栏配置
+sidebar:
+  site_data: # 站点数据
+    archive: true # 是否显示归档
+    tag: true # 是否显示标签
+    category: true # 是否显示分类
+  menus_items: true # 是否显示菜单项
+  tags_cloud: true # 是否显示标签云
+  display_mode: true # 是否显示昼夜切换
+  nav_menu_project: true # 是否显示导航项目
+
+# 文章h2标题添加分隔线
+h2Divider: false # 是否在h2标题下添加分隔线
+
+# 表格隔行变色
+table_interlaced_discoloration: false # 是否启用表格隔行变色
+
+# 首页双栏显示
+article_double_row: true # 是否启用首页文章双栏布局
+
+# 首页顶部图片设置
+# default: top_img全屏显示，site_info在中间
+index_site_info_top: # 主页标题距离顶部距离，如: 300px/300em/300rem/10%
+index_top_img_height: # 主页top_img高度，如: 300px/300em/300rem
+
+# 分类和标签页的UI设置
+# index: 与首页UI相同
+# default: 与归档页UI相同
+category_ui: # 分类页UI，留空或 index
+tag_ui: # 标签页UI，留空或 index
+
+# 页脚背景
+footer_bg: false # 是否启用页脚背景
+
+# 右下角按钮距离底部的距离 (默认单位: px)
+rightside-bottom: 100px
+
+# ==========================================
+# 背景特效配置 (Background Effects)
+# ==========================================
+# Background effects (背景特效)
+# --------------------------------------
+
+# canvas_ribbon (静止彩带背景)
+# https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: false # 是否启用彩带背景
+  size: 150 # 彩带大小
+  alpha: 0.6 # 彩带透明度
+  zIndex: -1 # 层级
+  click_to_change: false # 是否点击切换彩带
+  mobile: false # 移动端是否启用
+
+# Fluttering Ribbon (动态彩带)
+canvas_fluttering_ribbon:
+  enable: false # 是否启用动态彩带
+  mobile: false # 移动端是否启用
+
+# canvas_nest (动态线条背景)
+# https://github.com/hustcc/canvas-nest.js
+canvas_nest:
+  enable: false # 是否启用动态线条
+  color: "0,0,255" # 线条颜色，RGB值，用逗号分隔
+  opacity: 0.7 # 线条透明度 (0~1)
+  zIndex: -1 # 层级
+  count: 99 # 线条数量
+  mobile: false # 移动端是否启用
+
+# 打字特效 (Typewriter Effect)
+# https://github.com/disjukr/activate-power-mode
+activate_power_mode:
+  enable: false # 是否启用打字特效
+  colorful: true # 是否开启粒子动画 (冒光特效)
+  shake: false # 是否开启抖动特效
+  mobile: false # 移动端是否启用
+
+# 鼠标点击效果: 烟花特效
+fireworks:
+  enable: false # 是否启用烟花特效
+  zIndex: 9999 # 层级: -1 或 9999
+  mobile: false # 移动端是否启用
+
+# 鼠标点击效果: 爱心
+click_heart:
+  enable: false # 是否启用爱心特效
+  mobile: false # 移动端是否启用
+
+# 鼠标点击效果: 文字
+ClickShowText:
+  enable: false # 是否启用点击显示文字
+  text: # 点击显示的文字列表
+    # - I
+    # - LOVE
+    # - YOU
+  fontSize: 15px # 文字大小
+  random: false # 是否随机显示文字
+  mobile: false # 移动端是否启用
+
+# 网站默认显示模式
+# light (默认浅色) / dark (深色)
+display_mode: light
+
+# 页面美化
+beautify:
+  enable: true # 是否启用美化
+  field: post # 生效范围: site=全站 / post=文章页
+  title-prefix-icon: '\f0c1' # 标题前缀图标 (Font Awesome unicode)
+  title-prefix-icon-color: "#F47466" # 标题前缀图标颜色
+
+# 全局字体设置
+# 非必要不要修改以下设置
+font:
+  global-font-size: 16px # 全局字体大小
+  code-font-size: # 代码字体大小
+  font-family: # 全局字体族
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif # 代码字体族
+
+# 站点标题字体设置
+# 左上角网站名字和主页居中网站名字的字体
+blog_title_font:
+  font_link: # 字体链接 (如 Google Fonts)
+  font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif # 字体族
+
+# 水平分隔线图标设置
+hr_icon:
+  enable: true # 是否启用分隔线图标
+  icon: \f0c4 # Font Awesome 图标的 unicode 值，如 '\f0c4'
+  icon-top: # 图标距离顶部距离
+
+# 主页副标题 (subtitle)
+subtitle:
+  enable: false # 是否启用主页副标题
+  # Typewriter Effect (打字效果)
+  effect: true # 是否启用打字效果
+  # Effect Speed Options (打字效果速度参数)
+  startDelay: 300 # 打字开始前延迟 (毫秒)
+  typeSpeed: 150 # 打字速度 (毫秒)
+  backSpeed: 50 # 退格速度 (毫秒)
+  # loop (循环打字)
+  loop: true # 是否循环打字
+  # source 调用第三方服务
+  # source: false 关闭调用
+  # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
+  # source: 2  调用一句网（简体） http://yijuzhan.com/
+  # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
+  source: 1 # 一言来源
+  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
+  sub: # 自定义副标题文字列表
+    # - 生活明朗&#44;万物可爱&#44;人间值得&#44;未来可期.
+
+# 加载动画配置
+preloader:
+  enable: true # 是否启用加载动画
+  # source 加载动画类型
+  # 1. fullpage-loading (全屏加载)
+  # 2. pace (进度条)
+  # else all (其他值使用全部)
+  source: 3 # 加载动画类型
+  # pace 主题 (https://codebyzach.github.io/pace/)
+  pace_css_url: # pace CSS 地址
+  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 加载动画自定义头像
+
+# ==========================================
+# 侧边栏配置 (Aside)
+# ==========================================
+# aside (侧边栏)
+# --------------------------------------
+
+aside:
+  enable: true # 是否启用侧边栏
+  hide: false # 是否隐藏侧边栏
+  button: true # 是否显示侧边栏切换按钮
+  mobile: true # 移动端是否显示
+  position: right # 位置: left=左侧 / right=右侧
+  display: # 控制对应页面是否显示侧边栏
+    archive: true # 归档页
+    tag: true # 标签页
+    category: true # 分类页
+  # 作者卡片
+  card_author:
+    enable: true # 是否显示作者卡片
+    description: # 作者描述，默认为站点描述
+    name_link: / # 作者名称链接
+  # 公告卡片
+  card_announcement:
+    enable: false # 是否显示公告
+    content: 欢迎来看我的博客鸭~ # 公告内容
+  # 微信卡片
+  card_weixin:
+    enable: true # 是否显示微信卡片
+    face: https://bu.dusays.com/2023/01/13/63c02edf44033.png # 微信正面图片
+    backFace: https://bu.dusays.com/2023/05/13/645fa415e8694.png # 微信背面图片
+  # 最新文章卡片
+  card_recent_post:
+    enable: true # 是否显示最新文章
+    limit: 5 # 显示数量，设为0则显示全部
+    sort: date # 排序方式: date=日期 / updated=更新
+    sort_order: # 排序顺序，非必要不修改
+  # 分类卡片
+  card_categories:
+    enable: false # 是否显示分类
+    limit: 8 # 显示数量，设为0则显示全部
+    expand: none # 展开方式: none/true/false
+    sort_order: # 排序顺序，非必要不修改
+  # 标签卡片
+  card_tags:
+    enable: true # 是否显示标签
+    limit: 40 # 显示数量，设为0则显示全部
+    color: false # 是否显示标签颜色
+    sort_order: # 排序顺序，非必要不修改
+    highlightTags: # 高亮标签列表
+      # - Hexo
+      # - 前端
+  # 归档卡片
+  card_archives:
+    enable: true # 是否显示归档
+    type: monthly # 归档类型: yearly=按年 / monthly=按月
+    format: MMMM YYYY # 日期格式，如: YYYY年MM月
+    order: -1 # 排序: 1=升序 / -1=降序
+    limit: 8 # 显示数量，设为0则显示全部
+    sort_order: # 排序顺序，非必要不修改
+  # 网站信息卡片
+  card_webinfo:
+    enable: true # 是否显示网站信息
+    post_count: true # 是否显示文章总数
+    last_push_date: false # 是否显示最后更新时间
+    sort_order: # 排序顺序，非必要不修改
+
+# ==========================================
+# 访问统计配置 (Busuanzi)
+# ==========================================
+# busuanzi 不蒜子统计 PV/UV
+# 访问人数
+busuanzi:
+  site_uv: false # 是否显示站点UV (独立访客数)
+  site_pv: false # 是否显示站点PV (页面访问量)
+  page_pv: false # 是否显示页面PV
+
+# 网站运行时间
+# 格式: 月/日/年 时间 或 年/月/日 时间
+runtimeshow:
+  enable: true # 是否显示网站运行时间
+  publish_date: 4/1/2021 00:00:00 # 网站发布时间
+
+# 控制台最新评论
+newest_comments:
+  enable: true # 是否启用最新评论
+  sort_order: # 排序顺序，非必要不修改
+  limit: 6 # 显示数量
+  storage: 10 # 存储时间 (分钟)，数据保存到 localStorage
+  avatar: true # 是否显示头像
+
+# ==========================================
+# 右下角按钮配置 (Bottom Right Button)
+# ==========================================
+# Bottom right button (右下角按钮)
+# --------------------------------------
+
+# 简繁转换
+translate:
+  enable: true # 是否启用简繁转换
+  default: 简 # 按钮默认文字
+  rightMenuMsgDefault: "轉為繁體" # 右键菜单默认文字
+  defaultEncoding: 1 # 网站默认语言: 1=繁体中文 / 2=简体中文
+  translateDelay: 0 # 转换延迟时间
+  msgToTraditionalChinese: "繁" # 当前为简体时按钮文字
+  msgToSimplifiedChinese: "简" # 当前为繁体时按钮文字
+  rightMenuMsgToTraditionalChinese: "转为繁体" # 右键菜单转为繁体
+  rightMenuMsgToSimplifiedChinese: "转为简体" # 右键菜单转为简体
+
+# 阅读模式
+readmode: true # 是否启用阅读模式
+
+# ==========================================
+# 中控台配置 (Center Console)
+# ==========================================
+# 中控台 (文章页面底部显示的控制面板)
+centerConsole:
+  enable: true # 是否启用中控台
+  # 标签卡片
+  card_tags:
+    enable: true # 是否显示标签
+    limit: 40 # 显示数量，设为0则显示全部
+    color: false # 是否显示标签颜色
+    sort_order: # 排序顺序，非必要不修改
+    highlightTags: # 高亮标签列表
+      # - Hexo
+      # - 前端
+  # 归档卡片
+  card_archives:
+    enable: true # 是否显示归档
+    type: monthly # 归档类型: yearly=按年 / monthly=按月
+    format: MMMM YYYY # 日期格式，如: YYYY年MM月
+    order: -1 # 排序: 1=升序 / -1=降序
+    limit: 8 # 显示数量，设为0则显示全部
+    sort_order: # 排序顺序，非必要不修改
+
+# ==========================================
+# 深色模式配置 (Dark Mode)
+# ==========================================
+# dark mode (深色模式)
+darkmode:
+  enable: true # 是否启用深色模式
+  button: true # 是否显示切换按钮
+  # 自动切换深色/浅色模式
+  # autoChangeMode: 1  跟随系统设置，如系统不支持深色模式则在18:00-6:00间切换
+  # autoChangeMode: 2  在18:00-6:00间切换深色模式
+  # autoChangeMode: false  关闭自动切换
+  autoChangeMode: 1 # 自动切换模式
+  start: # 开始时间 (如 8 表示8点)
+  end: # 结束时间 (如 22 表示22点)
+
+# 右下角按钮顺序配置
+# 非必要请不要修改
+# 可选: readmode,translate,darkmode,hideAside,toc,chat,comment
+# 不要重复
+rightside_item_order:
+  enable: false # 是否启用自定义顺序
+  hide: # 需要隐藏的按钮，如: readmode,translate,darkmode,hideAside
+  show: # 需要显示的按钮，如: toc,chat,comment
+
+# ==========================================
+# 图片灯箱配置 (Lightbox)
+# ==========================================
+# Lightbox (图片大图查看模式)
+# 只能选择一个，或者两个都不选
+# --------------------------------------
+
+# medium-zoom 图片缩放
+# https://github.com/francoischalifour/medium-zoom
+medium_zoom: false # 是否启用 medium-zoom
+
+# fancybox 图片灯箱
+# http://fancyapps.com/fancybox/3/
+fancybox: true # 是否启用 fancybox
+
+# ==========================================
+# 标签外挂配置 (Tag Plugins)
+# ==========================================
+# Tag Plugins settings (标籤外挂)
+# --------------------------------------
+
+# mermaid 图表
+# https://github.com/mermaid-js/mermaid
+mermaid:
+  enable: false # 是否启用 mermaid
+  # 内置主题: default/forest/dark/neutral
+  theme:
+    light: default # 浅色模式主题
+    dark: dark # 深色模式主题
+
+# Note 提示框 (Bootstrap Callout 风格)
+note:
+  # Note 标签样式:
+  #  - simple    bs-callout 旧版提示样式 (默认)
+  #  - modern    bs-callout 新版 (v2-v3) 提示样式
+  #  - flat      扁平化提示样式，带背景色
+  #  - disabled  禁用所有 note 标签的 CSS 样式
+  style: flat # 提示框样式
+  icons: true # 是否显示图标
+  border_radius: 3 # 边框圆角
+  # 背景色偏移量百分比 (modern: -12|12; flat: -18|6)
+  light_bg_offset: 0
+
+# 图标配置
+icons:
+  ali_iconfont_js: # 阿里图标 symbol 引用链接，主题会加载 symbol 引用
+  fontawesome: false # 是否启用 FontAwesome 6 图标
+  fontawesome_animation_css: # FontAwesome 动画CSS，如有填写则加载
+
+# ==========================================
+# 其他配置 (Other)
+# ==========================================
+# other
+# --------------------------------------
+
+# Pjax (页面无刷新加载)
+# 可能包含bug且不稳定，发现问题请反馈
+# https://github.com/MoOx/pjax
+pjax:
+  enable: true # 是否启用 Pjax
+  exclude: # 排除的页面/元素
+    # - xxxx
+    # - xxxx
+
+# APlayer/Meting 音乐播放器注入
+aplayerInject:
+  enable: true # 是否启用音乐播放器
+  per_page: true # 是否每页加载
+
+# Snackbar (Toast 弹窗通知)
+# https://github.com/polonel/SnackBar
+# position 弹窗显示位置
+# 可选: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
+snackbar:
+  enable: true # 是否启用弹窗通知
+  position: top-center # 弹窗位置
+  bg_light: "#425AEF" # 浅色模式弹窗背景色
+  bg_dark: "#1f1f1f" # 深色模式弹窗背景色
+
+# instant.page (页面预加载)
+# https://instant.page/
+instantpage: true # 是否启用即时页面预加载
+
+# pangu.js (中英文之间添加空格)
+# https://github.com/vinta/pangu.js
+pangu:
+  enable: false # 是否启用中英文空格
+  field: site # 生效范围: site=全站 / post=文章页
+
+# 图片懒加载
+# https://github.com/verlok/vanilla-lazyload
+lazyload:
+  enable: true # 是否启用图片懒加载
+  field: site # 生效范围: site=全站 / post=文章页
+  placeholder: # 占位图片
+  blur: true # 是否启用模糊加载效果
+  progressive: true # 是否启用渐进式加载
+
+# ==========================================
+# PWA 配置 (Progressive Web App)
+# ==========================================
+# PWA (渐进式网页应用)
+# https://github.com/JLHwung/hexo-offline
+# ---------------
+pwa:
+  enable: false # 是否启用 PWA
+  startup_image_enable: true # 是否启用启动画面
+  manifest: /manifest.json # manifest 文件路径
+  theme_color: var(--anzhiyu-main) # PWA 主题色
+  mask_icon: /img/siteicon/apple-icon-180.png # Safari 遮罩图标
+  apple_touch_icon: /img/siteicon/apple-icon-180.png # Apple 触摸图标
+  bookmark_icon: /img/siteicon/apple-icon-180.png # 书签图标
+  favicon_32_32: /img/siteicon/32.png # 32x32 favicon
+  favicon_16_16: /img/siteicon/16.png # 16x16 favicon
+
+# Open Graph 元标签
+# https://developers.facebook.com/docs/sharing/webmasters/
+Open_Graph_meta: true # 是否启用 Open Graph 元标签 (用于社交分享)
+
+# 添加浏览器厂商前缀以确保兼容性
+css_prefix: true # 是否添加 CSS 浏览器前缀
+
+# ==========================================
+# 首页顶部配置 (Home Top)
+# ==========================================
+# 首页顶部相关配置
+home_top:
+  enable: true # 是否启用首页顶部自定义区域
+  timemode: date # 时间显示模式: date=发布时间 / updated=更新时间
+  title: 生活明朗 # 首页标题
+  subTitle: 万物可爱。 # 首页副标题
+  siteText: anheyu.com # 站点文字
+  # 分类导航
+  category:
+    - name: 前端 # 分类名称
+      path: /categories/前端开发/ # 分类路径
+      shadow: var(--anzhiyu-shadow-blue) # 阴影颜色
+      class: blue # CSS类名
+      icon: anzhiyu-icon-dove # 图标
+    - name: 大学 # 分类名称
+      path: /categories/大学生涯/ # 分类路径
+      shadow: var(--anzhiyu-shadow-red) # 阴影颜色
+      class: red # CSS类名
+      icon: anzhiyu-icon-fire # 图标
+    - name: 生活 # 分类名称
+      path: /categories/生活日常/ # 分类路径
+      shadow: var(--anzhiyu-shadow-green) # 阴影颜色
+      class: green # CSS类名
+      icon: anzhiyu-icon-book # 图标
+  default_descr: 再怎么看我也不知道怎么描述它的啦！ # 默认描述
+  # Swiper 轮播图
+  swiper:
+    enable: false # 是否启用轮播
+    swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css # Swiper CSS依赖
+    swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js # Swiper JS依赖
+  # 横幅广告
+  banner:
+    tips: 新品主题 # 提示文字
+    title: Theme-AnZhiYu # 横幅标题
+    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp # 横幅图片
+    link: https://docs.anheyu.com/ # 横幅链接
+
+# ==========================================
+# 朋友圈配置 (Friends Vue)
+# ==========================================
+# 朋友圈配置 (友链朋友圈)
+friends_vue:
+  enable: false # 是否启用朋友圈
+  vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js # Vue JS 依赖
+  apiurl: # 朋友圈后端地址
+  top_tips: 使用 友链朋友圈 订阅友链最新文章 # 顶部提示文字
+  top_background: # 顶部背景图片
+
+# ==========================================
+# 其他特效配置
+# ==========================================
+
+# 深色模式粒子效果 (canvas)
+universe:
+  enable: true # 是否启用深色模式星空粒子效果
+
+# 页面卡片顶部气泡升起效果
+bubble:
+  enable: false # 是否启用气泡效果
+
+# 控制台打印信息
+console:
+  enable: true # 是否在浏览器控制台打印信息
+
+# 51la 统计配置
+LA:
+  enable: false # 是否启用51la统计
+  ck: # 51la 统计密钥
+  LingQueMonitorID: # 灵雀监控ID
+
+# Umami 统计配置（关于页面访问统计卡片）
+# 文档: https://umami.is/docs/api
+umami:
+  enable: false # 是否启用 Umami 统计
+  apiHost: # Umami API 地址，如 https://analytics.example.com
+  websiteId: # 网站 ID
+  token: # API Token（在 Umami 后台 Settings -> API Keys 中生成）
+
+# ==========================================
+# 更多功能配置
+# ==========================================
+
+# 标签卖萌 (离开/返回页面时修改标题)
+diytitle:
+  enable: true # 是否启用标签卖萌
+  leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！ # 离开页面时显示的标题
+  backTitle: ♪(^∇^*)欢迎肥来！ # 返回页面时显示的标题
+
+# 留言弹幕配置
+comment_barrage_config:
+  enable: false # 是否启用留言弹幕
+  maxBarrage: 1 # 同时最多显示弹幕数
+  barrageTime: 4000 # 弹幕显示间隔时间 (毫秒)
+  accessToken: "" # Twikoo 访问令牌，在控制台中获取
+  mailMd5: "" # 博主邮箱 MD5 值
+
+# 左下角音乐播放器配置
+# https://github.com/metowolf/MetingJS
+nav_music:
+  enable: true # 是否启用左下角音乐播放器
+  console_widescreen_music: true # 宽屏状态控制台显示音乐而不是标签
+  id: 8152976493 # 歌单/专辑 ID
+  server: netease # 音乐平台: netease=网易云 / tencent=QQ音乐 等
+  volume: 0.7 # 默认音量 (0~1)
+  all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608 # 全部歌单链接
+
+# 音乐页面默认加载的歌单: 1. nav_music 2. custom
+music_page_default: nav_music
+
+# 评论匿名邮箱
+visitorMail:
+  enable: true # 是否启用匿名邮箱
+  mail: "" # 匿名邮箱地址
+
+# 文章底部工具配置
+ptool:
+  enable: true # 是否启用文章底部工具栏
+  share_mobile: true # 是否显示移动端分享
+  share_weibo: true # 是否显示微博分享
+  share_copyurl: true # 是否显示复制链接
+  categories: false # 是否显示分类
+  mode: # 运营模式与责任，不配置不显示
+
+# 欢迎语配置
+greetingBox:
+  enable: false # 是否启用欢迎语，开启后必须配置下面的list对应的时间段
+  default: 晚上好👋 # 默认欢迎语
+  list: # 按时间段配置欢迎语
+    # - greeting: 晚安😴
+    #   startTime: 0
+    #   endTime: 5
+    # - greeting: 早上好鸭👋, 祝你一天好心情！
+    #   startTime: 6
+    #   endTime: 9
+    # - greeting: 上午好👋, 状态很好，鼓励一下～
+    #   startTime: 10
+    #   endTime: 10
+    # - greeting: 11点多啦, 在坚持一下就吃饭啦～
+    #   startTime: 11
+    #   endTime: 11
+    # - greeting: 午安👋, 宝贝
+    #   startTime: 12
+    #   endTime: 14
+    # - greeting: 🌈充实的一天辛苦啦！
+    #   startTime: 14
+    #   endTime: 18
+    # - greeting: 19点喽, 奖励一顿丰盛的大餐吧🍔。
+    #   startTime: 19
+    #   endTime: 19
+    # - greeting: 晚上好👋, 在属于自己的时间好好放松😌~
+    #   startTime: 20
+    #   endTime: 24
+
+# 文章顶部 AI 摘要
+post_head_ai_description:
+  enable: true # 是否启用 AI 摘要
+  gptName: AnZhiYu # AI 名称
+  mode: local # 默认模式: tianli=天li / local=本地
+  switchBtn: false # 是否显示切换按钮 (tianli/local)
+  btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377 # 按钮链接
+  randomNum: 3 # 按钮最大随机次数，即一篇文章最大随机出几种摘要
+  basicWordCount: 1000 # 最低获取字符数，最小1000，最大1999
+  key: xxxx # API 密钥
+  Referer: https://xx.xx/ # Referer 头
+
+# 快捷键配置
+shortcutKey:
+  enable: false # 是否启用快捷键
+  delay: 100 # 所有键位延时触发 (毫秒，解决与浏览器键位冲突)
+  shiftDelay: 200 # Shift 按下延时多久开启 (毫秒)
+
+# 无障碍优化 (在首页按下「shift + ?」查看效果)
+accesskey:
+  enable: true # 是否启用无障碍快捷键
+
+# 友情链接顶部相关配置
+linkPageTop:
+  enable: false # 是否启用友链页顶部自定义区域
+  title: 与数百名博主无限进步 # 友链页标题
+  addFriendPlaceholder: "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n" # 添加友链的评论自定义格式
+
+# 缩略图后缀 (archive/tag/category 页面单独开启后缀)
+pageThumbnailSuffix: ""
+
+# 隐私协议弹窗
+agreementPopup:
+  enable: false # 是否启用隐私协议弹窗
+  url: /privacy # 隐私协议页面地址
+
+# 右键菜单
+rightClickMenu:
+  enable: false # 是否启用自定义右键菜单
+
+# 首页随便逛逛模式
+# people模式 (人物模式)，关闭后为技能点模式需要配置 creativity.yml
+peoplecanvas:
+  enable: true # 是否启用人物模式
+  img: https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png # 人物图片
+
+# ==========================================
+# 动效配置 (Dynamic Effect)
+# ==========================================
+# 动效
+dynamicEffect:
+  postTopWave: true # 文章顶部波浪效果
+  postTopRollZoomInfo: false # 文章顶部滚动时缩放信息
+  pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示 (仅 Twikoo 生效)
+
+# ==========================================
+# 代码注入配置 (Inject)
+# ==========================================
+# Inject (代码注入)
+# 插入代码到头部 </head> 之前 和 底部 </body> 之前
+inject:
+  head: # 注入到 </head> 之前
+    # 自定义 CSS
+    # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+
+  bottom: # 注入到 </body> 之前
+    # 自定义 JS
+    # - <script src="/js/xxx"></script>
+
+# ==========================================
+# CDN 配置 (CDN)
+# ==========================================
+# CDN
+# 非必要请不要修改
+CDN:
+  # 主题内部 JS 的 CDN 配置
+  # 可选: local/elemecdn/jsdelivr/unpkg/cdnjs/onmicrosoft/cbd/anheyu/custom
+  # 开发版主题只能设置为 local
+  internal_provider: local
+
+  # 第三方 JS 的 CDN 配置
+  # 可选: elemecdn/jsdelivr/unpkg/cdnjs/onmicrosoft/cbd/anheyu/custom
+  third_party_provider: cbd
+
+  # 是否在 CDN 链接中添加版本号
+  version: true
+
+  # 自定义 CDN 格式
+  # 例如: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
+  custom_format: # https://npm.elemecdn.com/${name}@latest/${file}
+
+  # CDN 选项 (可覆盖各个资源的 CDN 地址)
+  option:
+    # main_css:
+    # main:
+    # utils:
+    # translate:
+    # random_friends_post_js:
+    # right_click_menu_js:
+    # comment_barrage_js:
+    # ai_abstract_js:
+    # people_js:
+    # local_search:
+    # algolia_js:
+    # algolia_search:
+    # instantsearch:
+    # docsearch_js:
+    # docsearch_css:
+    # pjax:
+    # blueimp_md5:
+    # valine:
+    # twikoo:
+    # waline_js:
+    # waline_css:
+    # sharejs:
+    # sharejs_css:
+    # mathjax:
+    # katex:
+    # katex_copytex:
+    # mermaid:
+    # canvas_ribbon:
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # lazyload:
+    # instantpage:
+    # typed:
+    # pangu:
+    # fancybox_css:
+    # fancybox:
+    # medium_zoom:
+    # snackbar_css:
+    # snackbar:
+    # activate_power_mode:
+    # fireworks:
+    # click_heart:
+    # ClickShowText:
+    # fontawesome:
+    # flickr_justified_gallery_js:
+    # flickr_justified_gallery_css:
+    # aplayer_css:
+    # aplayer_js:
+    # meting_js:
+    # meting_api:
+    # prismjs_js:
+    # prismjs_lineNumber_js:
+    # prismjs_autoloader:
+    # artalk_js:
+    # artalk_css:
+    # pace_js:
+    # pace_default_css:
+    # countup_js:
+    # gsap_js:
+    # busuanzi:
+    # rightmenu:
+    # waterfall:
+    # ali_iconfont_css:
+    # accesskey_js:
+    # colorthief:
