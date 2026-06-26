@@ -46,17 +46,17 @@ nav:
   travelling: false # 是否开启旅行者/开往模式
   clock: true # 是否显示时钟
   # 导航栏项目列表
-  menu:
-    - title: 网页 # 导航栏分组标题
-      item:
-        - name: 烧录器 # 项目名称
-          link: https://www.icworkshop.com/ # 跳转链接
-          icon: /img/favicon.ico # 项目图标
-    - title: 项目 # 导航栏分组标题
-      item:
-        - name: 工具下载 # 项目名称
-          link: https://www.icworkshop.com/user/clientDownload # 跳转链接
-          icon: https://image.anheyu.com/favicon.ico # 项目图标
+  menu: []
+    # - title: 网页 # 导航栏分组标题
+    #   item:
+    #     - name: 烧录器 # 项目名称
+    #       link: https://www.icworkshop.com/ # 跳转链接
+    #       icon: /img/favicon.ico # 项目图标
+    # - title: 项目 # 导航栏分组标题
+    #   item:
+    #     - name: 工具下载 # 项目名称
+    #       link: https://www.icworkshop.com/user/clientDownload # 跳转链接
+    #       icon: https://image.anheyu.com/favicon.ico # 项目图标
 
 # ==========================================
 # 哀悼日配置 (Mourn)
@@ -1221,8 +1221,8 @@ home_top:
   siteText: anheyu.com # 站点文字
   # 分类导航
   category:
-    - name: 主板改造 # 分类名称
-      path: /categories/前端开发/ # 分类路径
+    - name: 资源下载 # 分类名称
+      path: /download/ # 分类路径
       shadow: var(--anzhiyu-shadow-blue) # 阴影颜色
       class: blue # CSS类名
       icon: anzhiyu-icon-dove # 图标
