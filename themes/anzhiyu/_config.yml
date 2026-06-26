@@ -8,23 +8,33 @@ menu:
   #   分类: /categories/ || anzhiyu-icon-shapes
   #   标签: /tags/ || anzhiyu-icon-tags
 
+  # 音乐馆
+  音乐馆: /music/?id=1708664797&server=tencent || anzhiyu-icon-music
+
+  # 下载菜单
+  下载:
+    固件: /download/firmware/ || anzhiyu-icon-code
+    卡丁车APP: /download/app/ || anzhiyu-icon-android
+    工具软件包: /download/tools/ || anzhiyu-icon-zip
+    遥控器外壳: /download/shell/ || anzhiyu-icon-box
+
   # 友链菜单
-  友链:
-    友人帐: /link/ || anzhiyu-icon-link
+  # 友链:
+  #   友人帐: /link/ || anzhiyu-icon-link
   #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
   #   留言板: /comments/ || anzhiyu-icon-envelope
 
   # 个人页面菜单
-  我的:
-    音乐馆: /music/?id=1708664797&server=tencent
+  # 我的:
+  #   音乐馆: /music/?id=1708664797&server=tencent
   #   追番页: /bangumis/ || anzhiyu-icon-bilibili
   #   相册集: /album/ || anzhiyu-icon-images
   #   小空调: /air-conditioner/ || anzhiyu-icon-fan
 
   # 关于菜单
-  关于:
+  # 关于:
   #   关于本人: /about/ || anzhiyu-icon-paper-plane
-    闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+  #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
   #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # ==========================================
@@ -32,20 +42,20 @@ menu:
 # ==========================================
 # nav相关配置
 nav:
-  enable: true # 是否启用导航栏
-  travelling: true # 是否开启旅行者/开往模式
+  enable: false # 是否启用导航栏
+  travelling: false # 是否开启旅行者/开往模式
   clock: true # 是否显示时钟
   # 导航栏项目列表
   menu:
     - title: 网页 # 导航栏分组标题
       item:
-        - name: 博客 # 项目名称
-          link: https://hexo.anheyu.com/ # 跳转链接
+        - name: 烧录器 # 项目名称
+          link: https://www.icworkshop.com/ # 跳转链接
           icon: /img/favicon.ico # 项目图标
     - title: 项目 # 导航栏分组标题
       item:
-        - name: 安知鱼图床 # 项目名称
-          link: https://image.anheyu.com/ # 跳转链接
+        - name: 工具下载 # 项目名称
+          link: https://www.icworkshop.com/user/clientDownload # 跳转链接
           icon: https://image.anheyu.com/favicon.ico # 项目图标
 
 # ==========================================
@@ -79,7 +89,7 @@ code_word_wrap: false # 代码是否自动换行
 copy:
   enable: true # 是否启用复制功能
   copyright:
-    enable: false # 是否启用复制后加版权信息
+    enable: true # 是否启用复制后加版权信息
     limit_count: 50 # 小于该字数时不添加版权信息
 
 # ==========================================
@@ -175,7 +185,8 @@ favicon: /favicon.ico # 网站favicon图标路径
 
 # Avatar (头像)
 avatar:
-  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg # 头像图片链接
+  # img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg # 头像图片链接
+  img: /head.png # 头像图片链接
   effect: false # 是否开启头像特效
 
 # 禁用所有横幅图片
@@ -185,7 +196,7 @@ disable_top_img: false # 设为true则禁用所有页面的顶部横幅图片
 index_img: false # 首页顶部大图，false则不显示，或填写背景图片URL
 
 # 页面默认顶部图片
-default_top_img: false # 当页面没有设置top_img时，默认显示的顶部图片
+default_top_img: /新品主题.png #false # 当页面没有设置top_img时，默认显示的顶部图片
 
 # 文章封面配置
 cover:
@@ -199,6 +210,7 @@ cover:
   # 当没有设置cover时，默认显示以下封面
   default_cover:
     # - /img/default_cover.jpg
+    - /img/default_cover.png
 
 # 替换无法显示的图片
 error_img:
@@ -218,14 +230,14 @@ post_meta:
   page: # 首页文章列表的元信息
     date_type: created # 日期类型: created=创建日 / updated=更新日 / both=两者都显示
     date_format: simple # 日期格式: date=日期 / relative=相对日期 / simple=简单日期
-    categories: true # 是否显示分类
-    tags: true # 是否显示标签
+    categories: false # 是否显示分类
+    tags: false # 是否显示标签
     label: false # 是否显示描述性文字
   post: # 文章详情页的元信息
     date_type: both # 日期类型: created=创建日 / updated=更新日 / both=两者都显示
     date_format: date # 日期格式: date=日期 / relative=相对日期
-    categories: true # 是否显示分类
-    tags: true # 是否显示标签
+    categories: false # 是否显示分类
+    tags: false # 是否显示标签
     label: true # 是否显示描述性文字
     unread: false # 是否开启文章未读功能
 
@@ -234,9 +246,9 @@ post_meta:
 # ==========================================
 # 主色调相关配置
 mainTone:
-  enable: false # 是否启用获取图片主色调功能
+  enable: true # 是否启用获取图片主色调功能
   # 主色调获取模式:
-  # colorthief: 前端获取图片主色调
+  colorthief: "#037BFE"  # 亮蓝色 前端获取图片主色调
   # cdn: 图片url+imageAve参数获取主色调
   # api: 请求API获取主色调
   # both: 先请求cdn参数，无法获取则请求API
@@ -293,7 +305,7 @@ post_copyright:
   enable: true # 是否启用版权声明
   decode: false # 是否对版权信息进行URL解码
   author_href: # 作者链接
-  location: 长沙 # 作者所在地
+  location: 成都 # 作者所在地
   license: CC BY-NC-SA 4.0 # 版权协议名称
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/ # 版权协议链接
   avatarSinks: false # hover时头像是否下沉
@@ -306,7 +318,7 @@ post_copyright:
 # ==========================================
 # Sponsor/reward (赞助/打赏)
 reward:
-  enable: true # 是否启用打赏功能
+  enable: false # 是否启用打赏功能
   QR_code:
     - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png # 打赏二维码图片
       link: # 二维码跳转链接
@@ -529,12 +541,12 @@ footer:
   # 版权所有者信息
   owner:
     enable: true # 是否显示版权信息
-    since: 2020 # 网站开始年份
+    since: 2026 # 网站开始年份
   custom_text: # 自定义文字
   # 运行时间显示
   runtime:
     enable: false # 是否显示运行时间
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    launch_time: 06/26/2026 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg # 上班时间徽章图片
     work_description: 距离月入25k也就还差一个大佬带我~ # 上班时间描述
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg # 下班时间徽章图片
@@ -635,8 +647,9 @@ footer:
       enable: false # 是否显示CC协议
       link: /copyright # CC协议链接
     linkList: # 底部链接列表
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
+      # - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+      - link: /
+        text: 卡丁车DIY
       # - link: https://image.anheyu.com
       #   text: 图床
       # - link: https://beian.miit.gov.cn/
@@ -912,7 +925,8 @@ preloader:
   source: 3 # 加载动画类型
   # pace 主题 (https://codebyzach.github.io/pace/)
   pace_css_url: # pace CSS 地址
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 加载动画自定义头像
+  # avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 加载动画自定义头像
+  avatar: /avatar.png # 加载动画自定义头像
 
 # ==========================================
 # 侧边栏配置 (Aside)
@@ -952,9 +966,9 @@ aside:
     sort_order: # 排序顺序，非必要不修改
   # 分类卡片
   card_categories:
-    enable: false # 是否显示分类
+    enable: true # 是否显示分类
     limit: 8 # 显示数量，设为0则显示全部
-    expand: none # 展开方式: none/true/false
+    expand: true # 展开方式: none/true/false
     sort_order: # 排序顺序，非必要不修改
   # 标签卡片
   card_tags:
@@ -994,7 +1008,7 @@ busuanzi:
 # 格式: 月/日/年 时间 或 年/月/日 时间
 runtimeshow:
   enable: true # 是否显示网站运行时间
-  publish_date: 4/1/2021 00:00:00 # 网站发布时间
+  publish_date: 6/26/2026 00:00:00 # 网站发布时间
 
 # 控制台最新评论
 newest_comments:
@@ -1035,7 +1049,7 @@ centerConsole:
   card_tags:
     enable: true # 是否显示标签
     limit: 40 # 显示数量，设为0则显示全部
-    color: false # 是否显示标签颜色
+    color: true # 是否显示标签颜色
     sort_order: # 排序顺序，非必要不修改
     highlightTags: # 高亮标签列表
       # - Hexo
@@ -1207,17 +1221,17 @@ home_top:
   siteText: anheyu.com # 站点文字
   # 分类导航
   category:
-    - name: 前端 # 分类名称
+    - name: 主板改造 # 分类名称
       path: /categories/前端开发/ # 分类路径
       shadow: var(--anzhiyu-shadow-blue) # 阴影颜色
       class: blue # CSS类名
       icon: anzhiyu-icon-dove # 图标
-    - name: 大学 # 分类名称
+    - name: 固件功能 # 分类名称
       path: /categories/大学生涯/ # 分类路径
       shadow: var(--anzhiyu-shadow-red) # 阴影颜色
       class: red # CSS类名
       icon: anzhiyu-icon-fire # 图标
-    - name: 生活 # 分类名称
+    - name: 教程 # 分类名称
       path: /categories/生活日常/ # 分类路径
       shadow: var(--anzhiyu-shadow-green) # 阴影颜色
       class: green # CSS类名
@@ -1230,10 +1244,11 @@ home_top:
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js # Swiper JS依赖
   # 横幅广告
   banner:
-    tips: 新品主题 # 提示文字
-    title: Theme-AnZhiYu # 横幅标题
-    image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp # 横幅图片
-    link: https://docs.anheyu.com/ # 横幅链接
+    tips: # 提示文字
+    title: # 横幅标题
+    # image: https://bu.dusays.com/2023/05/13/645fa3cf90d70.webp # 横幅图片
+    image: /新品主题.png # 横幅图片
+    # link: https://docs.anheyu.com/ # 横幅链接
 
 # ==========================================
 # 朋友圈配置 (Friends Vue)
@@ -1283,8 +1298,8 @@ umami:
 # 标签卖萌 (离开/返回页面时修改标题)
 diytitle:
   enable: true # 是否启用标签卖萌
-  leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！ # 离开页面时显示的标题
-  backTitle: ♪(^∇^*)欢迎肥来！ # 返回页面时显示的标题
+  leaveTitle: 毅学就会卡丁车 # 离开页面时显示的标题
+  backTitle: 欢迎肥来！ # 返回页面时显示的标题
 
 # 留言弹幕配置
 comment_barrage_config:
@@ -1353,7 +1368,7 @@ greetingBox:
 
 # 文章顶部 AI 摘要
 post_head_ai_description:
-  enable: true # 是否启用 AI 摘要
+  enable: false # 是否启用 AI 摘要
   gptName: AnZhiYu # AI 名称
   mode: local # 默认模式: tianli=天li / local=本地
   switchBtn: false # 是否显示切换按钮 (tianli/local)
