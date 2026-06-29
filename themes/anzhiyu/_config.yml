@@ -767,13 +767,13 @@ theme_color:
 # 移动端侧栏配置
 sidebar:
   site_data: # 站点数据
-    archive: true # 是否显示归档
-    tag: true # 是否显示标签
-    category: true # 是否显示分类
+    archive: false # 是否显示归档
+    tag: false # 是否显示标签
+    category: false # 是否显示分类
   menus_items: true # 是否显示菜单项
-  tags_cloud: true # 是否显示标签云
+  tags_cloud: false # 是否显示标签云
   display_mode: true # 是否显示昼夜切换
-  nav_menu_project: true # 是否显示导航项目
+  nav_menu_project: false # 是否显示导航项目
 
 # 文章h2标题添加分隔线
 h2Divider: false # 是否在h2标题下添加分隔线
@@ -938,7 +938,7 @@ aside:
   enable: true # 是否启用侧边栏
   hide: false # 是否隐藏侧边栏
   button: true # 是否显示侧边栏切换按钮
-  mobile: true # 移动端是否显示
+  mobile: false # 移动端是否显示
   position: right # 位置: left=左侧 / right=右侧
   display: # 控制对应页面是否显示侧边栏
     archive: true # 归档页
@@ -955,7 +955,7 @@ aside:
     content: 欢迎来看我的博客鸭~ # 公告内容
   # 微信卡片
   card_weixin:
-    enable: true # 是否显示微信卡片
+    enable: false # 是否显示微信卡片
     face: https://bu.dusays.com/2023/01/13/63c02edf44033.png # 微信正面图片
     backFace: https://bu.dusays.com/2023/05/13/645fa415e8694.png # 微信背面图片
   # 最新文章卡片
