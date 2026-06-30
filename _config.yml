@@ -149,3 +149,26 @@ sitemap:
 
 baidusitemap:
   path: baidusitemap.xml
+
+# ============================================================
+# 本地搜索配置 (Local Search)
+# 需要 hexo-generator-searchdb 插件
+# ============================================================
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# ============================================================
+# 图片压缩配置 (Image Minify)
+# 需要 hexo-imagemin 插件
+# ============================================================
+imagemin:
+  enable: true
+  interlaced: true
+  multipass: true
+  optimizationLevel: 5
+  pngquant:
+    quality: 0.7
+  progressive: true

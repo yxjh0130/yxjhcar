@@ -20,10 +20,10 @@ comments: false
 
 | 版本 | 文件名 | 说明 | 下载 |
 |------|--------|------|------|
-| V1.04 | 大象M3-MOTOR-V1.04-免费版4档卡丁车固件.bin | 大象M3 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.04-免费版4档卡丁车固件.bin) |
-| V1.05 | 大象M3-MOTOR-V1.05-免费版4档卡丁车固件.bin | 大象M3 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.05-免费版4档卡丁车固件.bin) |
-| V1.06 | 大象M3-MOTOR-V1.06-免费版4档卡丁车固件.bin | 大象M3 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.06-免费版4档卡丁车固件.bin) |
-| V1.07 | 大象M3-MOTOR-V1.07-免费版4档卡丁车固件.bin | 大象M3 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.07-免费版4档卡丁车固件.bin) |
+| V1.04 | 大象M3-MOTOR-V1.04-免费版4档卡丁车固件.bin | 大象M3 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.04-免费版4档卡丁车固件.bin) |
+| V1.05 | 大象M3-MOTOR-V1.05-免费版4档卡丁车固件.bin | 大象M3 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.05-免费版4档卡丁车固件.bin) |
+| V1.06 | 大象M3-MOTOR-V1.06-免费版4档卡丁车固件.bin | 大象M3 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.06-免费版4档卡丁车固件.bin) |
+| V1.07 | 大象M3-MOTOR-V1.07-免费版4档卡丁车固件.bin | 大象M3 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../大象M3-MOTOR-V1.07-免费版4档卡丁车固件.bin) |
 
 ---
 
@@ -31,8 +31,8 @@ comments: false
 
 | 版本 | 文件名 | 说明 | 下载 |
 |------|--------|------|------|
-| V1.A | 小米九号Min_Driv V1.A-免费版4档卡丁车固件.bin | 小米九号Min 免费版 4档卡丁车固件 | <a href="../小米九号Min_Driv%20V1.A-免费版4档卡丁车固件.bin"><i class="anzhiyufont anzhiyu-icon-download"></i> 下载</a> |
-| V1.B | 小米九号Min_Driv V1.B-免费版4档卡丁车固件.bin | 小米九号Min 免费版 4档卡丁车固件 | <a href="../小米九号Min_Driv%20V1.B-免费版4档卡丁车固件.bin"><i class="anzhiyufont anzhiyu-icon-download"></i> 下载</a> |
+| V1.A | 小米九号Min_Driv V1.A-免费版4档卡丁车固件.bin | 小米九号Min | <a href="../小米九号Min_Driv%20V1.A-免费版4档卡丁车固件.bin"><i class="anzhiyufont anzhiyu-icon-download"></i> 下载</a> |
+| V1.B | 小米九号Min_Driv V1.B-免费版4档卡丁车固件.bin | 小米九号Min | <a href="../小米九号Min_Driv%20V1.B-免费版4档卡丁车固件.bin"><i class="anzhiyufont anzhiyu-icon-download"></i> 下载</a> |
 
 ---
 
@@ -40,7 +40,7 @@ comments: false
 
 | 版本 | 文件名 | 说明 | 下载 |
 |------|--------|------|------|
-| V2.01 | 小象M1-MOTOR-V2.01-免费版4档卡丁车固件.bin | 小象M1 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.01-免费版4档卡丁车固件.bin) |
-| V2.03 | 小象M1-MOTOR-V2.03-免费版4档卡丁车固件.bin | 小象M1 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.03-免费版4档卡丁车固件.bin) |
-| V2.04 | 小象M1-MOTOR-V2.04-免费版4档卡丁车固件.bin | 小象M1 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.04-免费版4档卡丁车固件.bin) |
-| V20.5 | 小象M1-MOTOR-V20.5-免费版4档卡丁车固件.bin | 小象M1 免费版 4档卡丁车固件 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V20.5-免费版4档卡丁车固件.bin) |
+| V2.01 | 小象M1-MOTOR-V2.01-免费版4档卡丁车固件.bin | 小象M1 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.01-免费版4档卡丁车固件.bin) |
+| V2.03 | 小象M1-MOTOR-V2.03-免费版4档卡丁车固件.bin | 小象M1 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.03-免费版4档卡丁车固件.bin) |
+| V2.04 | 小象M1-MOTOR-V2.04-免费版4档卡丁车固件.bin | 小象M1 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V2.04-免费版4档卡丁车固件.bin) |
+| V2.05 | 小象M1-MOTOR-V2.05-免费版4档卡丁车固件.bin | 小象M1 | [<i class="anzhiyufont anzhiyu-icon-download"></i> 下载](../小象M1-MOTOR-V20.5-免费版4档卡丁车固件.bin) |

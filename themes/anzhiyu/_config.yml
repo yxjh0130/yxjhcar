@@ -13,8 +13,8 @@ menu:
 
   # 下载菜单
   下载:
-    固件: /download/firmware/ || anzhiyu-icon-code
-    卡丁车APP: /download/app/ || anzhiyu-icon-android
+    卡丁车固件: /download/firmware/ || anzhiyu-icon-code
+    卡丁车APP:  /download/app/ || anzhiyu-icon-android
     工具软件包: /download/tools/ || anzhiyu-icon-zip
     遥控器外壳: /download/shell/ || anzhiyu-icon-box
 
@@ -151,7 +151,7 @@ docsearch:
 # 本地搜索 (Local search)
 local_search:
   enable: false # 是否启用本地搜索
-  preload: true # 是否预加载搜索数据
+  preload: false # 是否预加载搜索数据
   CDN: # 搜索CDN地址
 
 # ==========================================
