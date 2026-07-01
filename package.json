@@ -26,6 +26,6 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-searchdb": "^1.4.1",
-    "hexo-imagemin": "^1.0.0"
+    "hexo-imagemin": "^1.0.1"
   }
 }
