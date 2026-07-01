@@ -161,6 +161,19 @@ search:
   format: html
 
 # ============================================================
+# Admin 管理后台配置 (hexo-admin)
+# 访问地址: http://localhost:4000/admin/
+# 文档: https://github.com/jaredly/hexo-admin
+# ============================================================
+# 本地使用时无需密码，直接访问 /admin/ 即可编辑
+# 如需部署到服务器，取消下面三行注释并设置密码:
+# admin:
+#   username: admin
+#   password_hash: <bcrypt_hash>
+#   secret: <a_secret_string>
+# 生成密码哈希: 启动 hexo server 后访问 /admin/ → Settings → Setup authentication
+
+# ============================================================
 # 图片压缩配置 (Image Minify)
 # 需要 hexo-imagemin 插件
 # ============================================================
