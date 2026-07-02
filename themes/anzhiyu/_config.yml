@@ -1026,7 +1026,7 @@ newest_comments:
 
 # 简繁转换
 translate:
-  enable: true # 是否启用简繁转换
+  enable: false # 是否启用简繁转换
   default: 简 # 按钮默认文字
   rightMenuMsgDefault: "轉為繁體" # 右键菜单默认文字
   defaultEncoding: 1 # 网站默认语言: 1=繁体中文 / 2=简体中文
